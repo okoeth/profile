@@ -19,6 +19,11 @@ func BuildAgenda(agenda chan string, topic string, items ...string) {
 
 }
 
+// PrintAgenda inserts agenda items
+func PrintAgenda(agenda chan string) {
+
+}
+
 // OnMyBookshelf build a list of books with links to Amazon in Markdown
 func OnMyBookshelf(items ...string) {
 
