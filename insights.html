@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Personal Profile</title>
+	<title>Personal Insights</title>
 	<style>
 		body {
 			margin-top: 0px;
@@ -90,39 +90,32 @@
 
 <body>
 	<img class="img-profile" src="{{.Pic}}" />
-	<h1>Person.Constants</h1>
+	<h1>Oliver.Konstanten</h1>
 	<p>
-		In our fast paced time, constants in ones life provide an important emotional anchor. My constants are: {{.Constants}}
+		In einer Zeit die durch den ständigen Wandel geprägt ist, sind für mich Konstanten im Leben wichtig.
+		Meine Konstanten sind: {{.Constants}}. Und nach 16 Jahren Betriebszugehörigkeit, kann man NTT DATA
+		eigentlich auch dazuzählen. 
 	</p>
-	<h1>Person.Flow</h1>
+	<h1>Oliver.FragenUndAntworten</h1>
 	<p>
-		My days are calls, meetings, and workshops mornings to evenings in arbitraty order (reload page to see this) with both recurring topics and a number of surprises.
+		Gerne hätte ich mich auf ein paar Fragen nach Lieblingsautor und  -musiker beschränkt. Meine
+		Lektorin war allerdings der Meinung, dass die folgenden Fragen für die Leser viel interessanter
+		sind.
 	</p>
 	<ul>
-			{{range .Agenda}}
-			<li>{{.}}</li>
+			{{range .QandAs}}
+			<li><i>{{.Q}}:</i><br>{{.A}}</li>
 			{{end}}
-		</ul>
-		<h1>Person.Properties.Authors</h1>
-	<ul>
-		{{range .Authors}}
-		<li>{{.}} [<a href="https://en.wikipedia.org/wiki/{{.}}">Link</a>]</li>
-		{{end}}
 	</ul>
-	<h1>Person.Properties.Timeline</h1>
-	<ul>
-		{{range .Timeline}}
-		<li>{{.}} [<a href="https://twitter.com/{{.}}">Link</a>]</li>
-		{{end}}
-	</ul>
-	<h2>Person.Trivia</h2>
+	<h1>Oliver.Trivia</h1>
 	<p>
-		{{range .Trivia}}
-		{{.}} // 
-		{{end}}
+		Am Ende gibt es aber doch noch etwas Trivia und damit sich der Programmieraufwand gelohnt hat,
+		wird jeweils eine Frage zufällig ausgewählt:
 	</p>
+	<ul>
+		<li>{{.SelectedTrivia}}</li>
+	</ul>
 	<p class="p-powered">powered by</p>
 	<img class="img-powered" src="https://avatars3.githubusercontent.com/u/31857290?s=200&v=4" />
 </body>
-
 </html>
