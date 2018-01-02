@@ -13,16 +13,17 @@ wurden sind [Docker](http://www.docker.com) und [Kubernetes](http://kubernetes.i
 
 Inzwischen setzt sich Golang aber auch immer weiter im Bereich der Anwendungsentwicklung durch
 und Firmen wie [Dropbox nutzen Golang](https://www.youtube.com/watch?v=5doOcaMXx08), aber auch 
-Anwedungen wie [Mattermost](https://github.com/mattermost/mattermost-server)
+Anwedungen wie [Mattermost](https://github.com/mattermost/mattermost-server) sind in Golang 
+implementiert.
 
 Was zeichnet also Golang im Vergleich zu anderen Programmiersprachen aus? Aus meiner Sicht kann 
-das mit drei Begriffen "einfach", "vollständig" und "modern" gut beschrieben werden:
+das mit den drei Begriffen "einfach", "vollständig" und "modern" gut beschrieben werden:
 
 
 ## Einfach
 Die Syntax von Golang ist frei von unnötigen Deklarationen und Steuerzeichen, so daß Prgramme
 schnell, einfach und übersichtlich geschrieben werden können. Dennoch ist die Sprache typsicher.
-In den Beispiel unten wird eine String Variable implizit aus dem Ergebnis der Funktion
+In dem Beispiel unten wird eine String Variable implizit aus dem Ergebnis der Funktion
 initialisiert:
 ```
 key := os.Getenv("KEY")
@@ -49,7 +50,7 @@ vermeiden so konkurrierende Zugriff auf gemeinsame Variablen.
 Auch wenn man nicht mit Golang programmiert, kann man [hier](https://blog.golang.org/concurrency-is-not-parallelism) 
 viel über Nebenläufigkeit lernen.
 In meinem Beispiel werden Go Routinen bemüht um einen Trivia
-Aspekt zufällig auszuwählen (ja, etwas sehr bemüht, das ginge auf anders ;-)
+Aspekt zufällig auszuwählen (ja, etwas sehr bemüht, das ginge auch anders ;-)
 ```
 c := make(chan string)
 for _, t := range i.Trivia {
@@ -78,21 +79,21 @@ t.ExecuteTemplate(w, "insights.html", i)
 
 
 ## Modern (aber nicht immer neu!)
-Was Golang -- zum Beispiel im Vergleich zu Java -- neben vielen extenen Bibliothekten 
+Was Golang -- im Vergleich zu Java -- neben vielen extenen Bibliothekten 
 ebenfalls nicht benötigt ist eine Laufzeitumgebung. Damit stehen einem Java Server 
 Prozess, der ohne Anwendung (nur für die virtuelle Maschine und den Application Server)
-schon 150MB Speicher benötigt, ein in Golang entwickelt Service mit einem minimalen 
+schon 150MB Speicher benötigt, ein in Golang entwickelter Service mit einem minimalen 
 Speicherbedarf von 4MB entgegen.
 
 In Zeiten von Microservices und Container Orchestrierung ein nicht zu vernachlässigender
 und kommerziell durchaus relevanter Aspekt. 
 
 Während Golang also einerseits bestens in das moderne Cloud Zeitalter paßt, ist aber bei weitem nicht 
-alles neu (i.S.v. es sind viele Weisheiten unserer Industrie in Golang erhalten). Das fängt zum einen
+alles neu. Im Gegenteil, es sind viele Weisheiten unserer Industrie in Golang enthalten. Das fängt zum einen
 schon bei dem Team an, das Golang entwickelt hat: Robert Griesemer, Rob Pike und Ken Thompson (ja, *der* 
 Ken Thompson ;-)
 
-Viele Aspekte wie zum Beispiel der [Golang Assembler](https://golang.org/doc/asm), der viel zur 
+Viele Aspekte wie zum Beispiel der [Golang Assembler](https://golang.org/doc/asm), der entscheidend zur 
 Portabilität von Golang ganz ohne Virtuelle Maschine beiträgt, sind direkt auf 
 [Plan9](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs) zurückzuführen.
 
@@ -106,7 +107,7 @@ Alles in allem für mich eine faszinierende Kombination aus Tradition und Modern
 # Das Programm ausprobieren
 
 Wer jetzt Lust auf etwas Go bekommen hat, kann entweder ein [Tour durch Go](https://tour.golang.org/welcome/1) 
-direkt im Browser mit dem starten.
+direkt im Browser starten.
 
 
 # Lokal
@@ -122,7 +123,7 @@ curl http://localhost:8017/personalinsights/
 
 
 # In Docker
-Alternativ kann man das Programm auch in Docker bauen und starten. Dazu ist nicht einmal eine Installation von
+Alternativ könnt Ihr das Programm auch in Docker bauen und starten. Dazu ist nicht einmal eine Installation von
 Golang notwendig.
 ```
 git clone git@github.com:okoeth/profile.git /tmp/profile
