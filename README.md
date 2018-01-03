@@ -32,7 +32,9 @@ key := os.Getenv("KEY")
 Anstatt auf komplexe Objekthierarchien setzt Golang auf Interfaces. Es ist typisch für
 Golang, dass Interfaces nur sehr wenige Methoden haben (kein Vergleich mit Java) und eines
 der [Golang Sprichworte](http://go-proverbs.github.io/) ist auch: Je größer das Interface, 
-desto schwächer die Abstraktion. Wie wahr.
+desto schwächer die Abstraktion. Wie wahr. Der in meinem Beispiel verwendete 
+[http.ResponseWriter](https://godoc.org/net/http#ResponseWriter)
+hat zum Beispiel nur die Methoden "Header", "Write", und "WriteHeader".
 
 Ebenfalls zur Übersichtlichkeit tragen anonyme Funktionen bei. In meinem Beispiel, kann dadurch
 sogar auf die Verwendung von Interfaces bei der Implementierung der Serverfunktionalität
