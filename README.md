@@ -21,7 +21,7 @@ das mit den drei Begriffen "einfach", "vollständig" und "modern" gut beschriebe
 
 
 ## Einfach
-Die Syntax von Golang ist frei von unnötigen Deklarationen und Steuerzeichen, so daß Prgramme
+Die Syntax von Golang ist frei von unnötigen Deklarationen und Steuerzeichen, so dass Programme
 schnell, einfach und übersichtlich geschrieben werden können. Dennoch ist die Sprache typsicher.
 In dem Beispiel unten wird eine String Variable implizit aus dem Ergebnis der Funktion
 initialisiert:
@@ -30,12 +30,12 @@ key := os.Getenv("KEY")
 ```
 
 Anstatt auf komplexe Objekthierarchien setzt Golang auf Interfaces. Es ist typisch für
-Golang, daß Interfaces nur sehr wenige Methoden haben (kein Vergleich mit Java) und eines
+Golang, dass Interfaces nur sehr wenige Methoden haben (kein Vergleich mit Java) und eines
 der [Golang Sprichworte](http://go-proverbs.github.io/) ist auch: Je größer das Interface, 
 desto schwächer die Abstraktion. Wie wahr.
 
 Ebenfalls zur Übersichtlichkeit tragen anonyme Funktionen bei. In meinem Beispiel, kann dadurch
-sogar auf die Verwendung von Interfaces bei der Implementerung der Serverfunktionalität
+sogar auf die Verwendung von Interfaces bei der Implementierung der Serverfunktionalität
 verzichtet werden.
 ```
 http.HandleFunc("/personalinsights/"+key, func(w http.ResponseWriter, r *http.Request) {
@@ -44,8 +44,8 @@ http.HandleFunc("/personalinsights/"+key, func(w http.ResponseWriter, r *http.Re
 ```
 
 Das spannendste Element sind für mich aber Go Routinen, mit denen nebenläufige Funktionen
-entwickelt werden können, ohne daß man sich mit Betriebssystemaspekten wie Threads
-herumschlagen muß. Die nebenläufigen Funktionen kommunizieren dabei über Channels und
+entwickelt werden können, ohne dass man sich mit Betriebssystemaspekten wie Threads
+herumschlagen muss. Die nebenläufigen Funktionen kommunizieren dabei über Channels und
 vermeiden so konkurrierende Zugriff auf gemeinsame Variablen.
 Auch wenn man nicht mit Golang programmiert, kann man [hier](https://blog.golang.org/concurrency-is-not-parallelism) 
 viel über Nebenläufigkeit lernen.
@@ -79,7 +79,7 @@ t.ExecuteTemplate(w, "insights.html", i)
 
 
 ## Modern (aber nicht immer neu!)
-Was Golang -- im Vergleich zu Java -- neben vielen extenen Bibliothekten 
+Was Golang -- im Vergleich zu Java -- neben vielen externen Bibliotheken 
 ebenfalls nicht benötigt ist eine Laufzeitumgebung. Damit stehen einem Java Server 
 Prozess, der ohne Anwendung (nur für die virtuelle Maschine und den Application Server)
 schon 150MB Speicher benötigt, ein in Golang entwickelter Service mit einem minimalen 
@@ -88,7 +88,7 @@ Speicherbedarf von 4MB entgegen.
 In Zeiten von Microservices und Container Orchestrierung ein nicht zu vernachlässigender
 und kommerziell durchaus relevanter Aspekt. 
 
-Während Golang also einerseits bestens in das moderne Cloud Zeitalter paßt, ist aber bei weitem nicht 
+Während Golang also einerseits bestens in das moderne Cloud Zeitalter passt, ist aber bei weitem nicht 
 alles neu. Im Gegenteil, es sind viele Weisheiten unserer Industrie in Golang enthalten. Das fängt zum einen
 schon bei dem Team an, das Golang entwickelt hat: Robert Griesemer, Rob Pike und Ken Thompson (ja, *der* 
 Ken Thompson ;-)
@@ -97,7 +97,7 @@ Viele Aspekte wie zum Beispiel der [Golang Assembler](https://golang.org/doc/asm
 Portabilität von Golang ganz ohne Virtuelle Maschine beiträgt, sind direkt auf 
 [Plan9](https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs) zurückzuführen.
 
-Der elegente Ansatz zur Erstellung von nebenfäufigen Programmen geht sogar bis auf einen 
+Der elegente Ansatz zur Erstellung von nebenläufigen Programmen geht sogar bis auf einen 
 [Artikel von C.A.R. Hoare](http://spinroot.com/courses/summer/Papers/hoare_1978.pdf) aus dem Jahr 
 1978 zurück.
 
@@ -112,7 +112,7 @@ direkt im Browser starten.
 
 # Lokal
 Oder Ihr [installiert Golang](https://golang.org/dl/) auf Eurem Rechner und laßt das Beispiel hier lokal laufen.
-Es wird im weiteren angenommen, daß in einer Unix Shell (z.B Git Bash unter Windows) gearbeitet wird.
+Es wird im Weiteren angenommen, dass in einer Unix Shell (z.B Git Bash unter Windows) gearbeitet wird.
 ```
 git clone git@github.com:okoeth/profile.git ~/go/src/profile
 cd ~/go/src/profile
