@@ -30,22 +30,22 @@ func main() {
 				Pic:       "https://avatars1.githubusercontent.com/u/4511670?s=460&v=4",
 				Constants: "Familie, Reisen, Unabhängigkeit",
 				QandAs: []QandA{
-					{Q: "Wie schaffe ich mein hohes Arbeitspensum?",
+					{Q: "Wie bekommst Du Job und Familie unter einen Hut?",
+						A: "Das wichtigste ist, mit der Familie eine gemeinsame Sicht auf " +
+							"die Prioritäten zu haben. Es hilft mir auch, die Tage oder " +
+							"Tagesabschnitte klar zu trennen: Job oder Familie. Und nicht ein " +
+							"Mischmasch, bei dem man keiner Seite wirklich gerecht wird."},
+					{Q: "Wie schaffst Du dein hohes Arbeitspensum?",
 						A: "Zum einen steht auch bei mir der Input in Korrelation zum " +
 							"Output, d.h. lange Arbeitstage. Aber bei den vielen Themen, " +
 							"die ich bearbeiten darf, gibt es auch immer die Chance " +
 							"Teilergebnisse wiederzuverwenden, so dass der Output manchmal " +
 							"nach mehr aussieht als es eigentlich ist. Daneben sind ein paar " +
 							"Grundtugenden wie Zero Inbox extrem hilfreich."},
-					{Q: "Woher nehme ich die Energie?",
+					{Q: "Woher nimmst Du die Energie?",
 						A: "Zum Großteil aus meiner Begeisterung für Technik, aber auch aus " +
-							"einem (angeborenen?) Qualitätsanspruch. 7-8 Stunden Schlaf und " +
-							"regelmäßige Tagesabläufe helfen ebenfalls."},
-					{Q: "Wie bekomme ich Job und Familie unter einen Hut?",
-						A: "Das wichtigste ist, mit der Familie eine gemeinsame Sicht auf " +
-							"die Prioritäten zu haben. Es hilft mir auch, die Tage oder " +
-							"Tagesabschnitte klar zu trennen: Job oder Familie. Und nicht ein " +
-							"Mischmasch, bei dem man keiner Seite wirklich gerecht wird."}},
+							"einem angeborenen Qualitätsanspruch. 7-8 Stunden Schlaf und " +
+							"regelmäßige Tagesabläufe helfen ebenfalls."}},
 				Trivia: []string{
 					"Katze oder Hund: Katze", "Flugzeug oder Bahn: Bahn", "Emacs oder Vi: Vi"},
 			}
